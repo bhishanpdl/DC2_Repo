@@ -1,0 +1,68 @@
+[NbConvertApp] Converting notebook LSST_Stack_matching_code.ipynb to notebook
+[NbConvertApp] Executing notebook with kernel: desc-stack
+/global/common/software/lsst/common/miniconda/kernels/stack.sh: illegal option -- f
+/global/common/software/lsst/cori-haswell-gcc/stack//setup_current_sims.sh: line 20: module: command not found
+/global/common/software/lsst/cori-haswell-gcc/stack//setup_current_sims.sh: line 21: module: command not found
+/global/common/software/lsst/cori-haswell-gcc/stack//setup_current_sims.sh: line 22: module: command not found
+/global/common/software/lsst/cori-haswell-gcc/stack//setup_current_sims.sh: line 23: module: command not found
+/global/common/software/lsst/cori-haswell-gcc/stack//setup_current_sims.sh: line 24: module: command not found
+/global/common/software/lsst/cori-haswell-gcc/stack//setup_current_sims.sh: line 25: module: command not found
+/global/common/software/lsst/cori-haswell-gcc/stack//setup_current_sims.sh: line 26: module: command not found
+Now setup any necessary stack packages such as: setup lsst_distrib or lsst_sims
+Traceback (most recent call last):
+  File "/global/common/software/lsst/common/miniconda/py3-4.3.21-env/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/global/common/software/lsst/common/miniconda/py3-4.3.21-env/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/global/common/software/lsst/common/miniconda/py3-4.3.21-env/lib/python3.6/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/global/common/software/lsst/common/miniconda/py3-4.3.21-env/lib/python3.6/site-packages/traitlets/config/application.py", line 657, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-123>", line 2, in initialize
+  File "/global/common/software/lsst/common/miniconda/py3-4.3.21-env/lib/python3.6/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/global/common/software/lsst/common/miniconda/py3-4.3.21-env/lib/python3.6/site-packages/ipykernel/kernelapp.py", line 456, in initialize
+    self.init_sockets()
+  File "/global/common/software/lsst/common/miniconda/py3-4.3.21-env/lib/python3.6/site-packages/ipykernel/kernelapp.py", line 259, in init_sockets
+    self.init_iopub(context)
+  File "/global/common/software/lsst/common/miniconda/py3-4.3.21-env/lib/python3.6/site-packages/ipykernel/kernelapp.py", line 264, in init_iopub
+    self.iopub_port = self._bind_socket(self.iopub_socket, self.iopub_port)
+  File "/global/common/software/lsst/common/miniconda/py3-4.3.21-env/lib/python3.6/site-packages/ipykernel/kernelapp.py", line 180, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 547, in zmq.backend.cython.socket.Socket.bind
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Address already in use
+Traceback (most recent call last):
+  File "/usr/common/software/python/3.6-anaconda-4.4/bin/jupyter-nbconvert", line 11, in <module>
+    load_entry_point('nbconvert==5.1.1', 'console_scripts', 'jupyter-nbconvert')()
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/jupyter_core/application.py", line 266, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/traitlets/config/application.py", line 658, in launch_instance
+    app.start()
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/nbconvert/nbconvertapp.py", line 305, in start
+    self.convert_notebooks()
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/nbconvert/nbconvertapp.py", line 473, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/nbconvert/nbconvertapp.py", line 444, in convert_single_notebook
+    output, resources = self.export_single_notebook(notebook_filename, resources, input_buffer=input_buffer)
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/nbconvert/nbconvertapp.py", line 373, in export_single_notebook
+    output, resources = self.exporter.from_filename(notebook_filename, resources=resources)
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 171, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 189, in from_file
+    return self.from_notebook_node(nbformat.read(file_stream, as_version=4), resources=resources, **kw)
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/nbconvert/exporters/notebook.py", line 31, in from_notebook_node
+    nb_copy, resources = super(NotebookExporter, self).from_notebook_node(nb, resources, **kw)
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 131, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 308, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/nbconvert/preprocessors/base.py", line 47, in __call__
+    return self.preprocess(nb,resources)
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py", line 207, in preprocess
+    cwd=path)
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/nbconvert/preprocessors/execute.py", line 192, in start_new_kernel
+    kc.wait_for_ready(timeout=startup_timeout)
+  File "/usr/common/software/python/3.6-anaconda-4.4/lib/python3.6/site-packages/jupyter_client/blocking/client.py", line 120, in wait_for_ready
+    raise RuntimeError('Kernel died before replying to kernel_info')
+RuntimeError: Kernel died before replying to kernel_info
